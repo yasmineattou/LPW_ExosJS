@@ -1,3 +1,4 @@
+//Exercice cours n°2
 let name= "";
 let age =24;
 const PI =3.141;
