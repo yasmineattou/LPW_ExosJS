@@ -53,7 +53,8 @@ function updateCounter(initialNumber) {
 console.log(updateCounter(2));
 
 function calculateTotal ([prix1,prix2,prix3]) {
-    let total= prix1*1.2+prix2*1.2+prix3*1.2;
+    let total= 0;
+    total= prix1*1.2+prix2*1.2+prix3*1.2;
     return total
 }
 
