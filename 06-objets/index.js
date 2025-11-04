@@ -42,7 +42,7 @@ console.log(getUserInfo(userFinal));
 //Une méthode getBalance pour obtenir le solde
 
 
-//méthode: ca reste fonction mais appliquée sur une classe 
+//méthode: ca reste fonction mais appliquée sur une classe(/attachée à un objet) 
 function createBankAccount () {
     balance:0;
 }
