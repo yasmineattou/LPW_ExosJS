@@ -12,7 +12,12 @@ addTaskButton.addEventListener('click', () => {
     }
 
     const listItem = document.createElement('li');
+    listItem.classList.add('todo-item');
     listItem.textContent = taskText;
+
+    // Create a container for buttons
+    const buttonContainer = document.createElement('div');
+    buttonContainer.classList.add('buttons');
 
     // Add done button to each task
     const doneButton = document.createElement('button');
@@ -28,8 +33,12 @@ addTaskButton.addEventListener('click', () => {
         taskList.removeChild(listItem);
     });
 
-    listItem.appendChild(doneButton);
-    listItem.appendChild(deleteButton);
+    // Append buttons to the container
+    buttonContainer.appendChild(doneButton);
+    buttonContainer.appendChild(deleteButton);
+
+    // Append the container to the list item
+    listItem.appendChild(buttonContainer);
     taskList.appendChild(listItem);
 
     taskInput.value = ''; // Clear input field
