@@ -44,3 +44,4 @@ addTaskButton.addEventListener('click', () => {
     taskInput.value = ''; // Clear input field
 });
 
+// Allow adding task by pressing Enter key
